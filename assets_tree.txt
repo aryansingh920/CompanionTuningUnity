@@ -1,0 +1,77 @@
+Assets
+├── Animation
+│   ├── CompanionAnimator.controller
+│   ├── CompanionAnimator.controller.meta
+│   ├── Sitting Talking-2.fbx
+│   ├── Sitting Talking-2.fbx.meta
+│   ├── Sitting Talking.fbx
+│   ├── Sitting Talking.fbx.meta
+│   ├── Talking.fbx
+│   ├── Talking.fbx.meta
+│   ├── Walking.fbx
+│   └── Walking.fbx.meta
+├── Animation.meta
+├── Character
+│   ├── character.fbx
+│   └── character.fbx.meta
+├── Character.meta
+├── InputSystem_Actions.inputactions
+├── InputSystem_Actions.inputactions.meta
+├── Readme.asset
+├── Readme.asset.meta
+├── Room
+│   ├── Room.mtl
+│   ├── Room.mtl.meta
+│   ├── Room.obj
+│   └── Room.obj.meta
+├── Room.meta
+├── Scenes
+│   ├── SampleScene.unity
+│   └── SampleScene.unity.meta
+├── Scenes.meta
+├── Scripts
+│   ├── CompanionAnimatorController.cs
+│   └── CompanionAnimatorController.cs.meta
+├── Scripts.meta
+├── Settings
+│   ├── DefaultVolumeProfile.asset
+│   ├── DefaultVolumeProfile.asset.meta
+│   ├── Mobile_RPAsset.asset
+│   ├── Mobile_RPAsset.asset.meta
+│   ├── Mobile_Renderer.asset
+│   ├── Mobile_Renderer.asset.meta
+│   ├── PC_RPAsset.asset
+│   ├── PC_RPAsset.asset.meta
+│   ├── PC_Renderer.asset
+│   ├── PC_Renderer.asset.meta
+│   ├── SampleSceneProfile.asset
+│   ├── SampleSceneProfile.asset.meta
+│   ├── UniversalRenderPipelineGlobalSettings.asset
+│   └── UniversalRenderPipelineGlobalSettings.asset.meta
+├── Settings.meta
+├── Tree_Textures
+│   ├── diffuse.png
+│   ├── diffuse.png.meta
+│   ├── normal_specular.png
+│   ├── normal_specular.png.meta
+│   ├── shadow.png
+│   ├── shadow.png.meta
+│   ├── translucency_gloss.png
+│   └── translucency_gloss.png.meta
+├── Tree_Textures.meta
+├── TutorialInfo
+│   ├── Icons
+│   │   ├── URP.png
+│   │   └── URP.png.meta
+│   ├── Icons.meta
+│   ├── Layout.wlt
+│   ├── Layout.wlt.meta
+│   ├── Scripts
+│   │   ├── Editor
+│   │   │   ├── ReadmeEditor.cs
+│   │   │   └── ReadmeEditor.cs.meta
+│   │   ├── Editor.meta
+│   │   ├── Readme.cs
+│   │   └── Readme.cs.meta
+│   └── Scripts.meta
+└── TutorialInfo.meta
