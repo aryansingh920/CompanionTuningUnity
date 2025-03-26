@@ -25,9 +25,3 @@ MemoryCaptures/
 .idea/
 *.apk
 *.aab
-Assets/Room/Room.obj
-*.obj
-
-Assets/Animation
-Assets/Character
-Assets/Room
