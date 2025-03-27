@@ -6,8 +6,8 @@ public class InputManager : MonoBehaviour
 
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal"); // A/D or Left/Right Arrow
-        float v = Input.GetAxisRaw("Vertical");   // W/S or Up/Down Arrow
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
         MovementInput = new Vector2(h, v).normalized;
     }

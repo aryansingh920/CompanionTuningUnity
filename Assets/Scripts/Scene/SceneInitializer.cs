@@ -2,18 +2,19 @@ using UnityEngine;
 #if UNITY_XR_MANAGEMENT
 using UnityEngine.XR.Management;
 #endif
+using System.Collections;
 
 public class SceneInitializer : MonoBehaviour
 {
-    public bool useXR = false; // Toggle this to enable XR mode
+    public bool useXR = false;
 
     void Start()
     {
 #if UNITY_XR_MANAGEMENT
-    if (useXR)
-        StartCoroutine(StartXR());
-    else
-        SetupCamera();
+        if (useXR)
+            StartCoroutine(StartXR());
+        else
+            SetupCamera();
 #else
         SetupCamera();
 #endif
@@ -42,26 +43,32 @@ public class SceneInitializer : MonoBehaviour
 
     void SpawnCompanion()
     {
-        GameObject companion = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+        GameObject companionPrefab = Resources.Load<GameObject>("Character/girl");
+        if (companionPrefab == null)
+        {
+            Debug.LogError("Character/girl prefab not found in Resources.");
+            return;
+        }
+
+        GameObject companion = Instantiate(companionPrefab);
         companion.name = "Companion";
         companion.transform.position = Vector3.zero;
 
-        // Remove collider from primitive (optional, to avoid physics issues)
-        Destroy(companion.GetComponent<Collider>());
+        if (companion.GetComponent<CharacterController>() == null)
+            companion.AddComponent<CharacterController>();
 
-        // Add CharacterController for smooth movement
-        companion.AddComponent<CharacterController>();
+        if (companion.GetComponent<Animator>() == null)
+            companion.AddComponent<Animator>();
 
-        // Add animator if needed
-        // Animator animator = companion.AddComponent<Animator>();
-        // animator.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("Animation/CompanionController");
+        if (companion.GetComponent<RuntimeAnimatorSetup>() == null)
+            companion.AddComponent<RuntimeAnimatorSetup>();
 
-        // Add your movement script
-        companion.AddComponent<CompanionController>();
+        if (companion.GetComponent<CompanionController>() == null)
+            companion.AddComponent<CompanionController>();
     }
 
 #if UNITY_XR_MANAGEMENT
-    System.Collections.IEnumerator StartXR()
+    IEnumerator StartXR()
     {
         Debug.Log("Initializing XR...");
         XRGeneralSettings.Instance.Manager.InitializeLoaderSync();
