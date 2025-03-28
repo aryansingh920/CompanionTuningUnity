@@ -19,7 +19,10 @@ public class CompanionController : MonoBehaviour
         Vector2 input = InputManager.MovementInput;
         Vector3 move = new Vector3(input.x, 0, input.y);
 
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        // Vector3 gravity = Vector3.down * 9.81f;
+
+        controller.Move(move.normalized * moveSpeed * Time.deltaTime);
+        // controller.Move((move * moveSpeed + gravity) * Time.deltaTime);
 
         if (move != Vector3.zero)
         {

@@ -33,6 +33,17 @@ public class SceneInitializer : MonoBehaviour
         cameraObj.transform.LookAt(Vector3.zero);
     }
 
+    // void SetupCamera()
+    // {
+    //     GameObject cameraObj = new GameObject("Main Camera");
+    //     Camera camera = cameraObj.AddComponent<Camera>();
+    //     cameraObj.tag = "MainCamera";
+
+    //     // Add a follow script
+    //     cameraObj.AddComponent<ThirdPersonCamera>();
+    // }
+
+
     void SetupLight()
     {
         GameObject lightObj = new GameObject("Directional Light");
