@@ -1,0 +1,2 @@
+/Users/aryansingh/Documents/ARVR/FriendTuning/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/CMakeLists.txt
+/Users/aryansingh/Documents/ARVR/FriendTuning/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/CMakeLists.txt

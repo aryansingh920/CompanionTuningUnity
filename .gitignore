@@ -1,0 +1,91 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Crash Reports
+sysinfo.txt
+
+# ============ #
+# OS Specific  #
+# ============ #
+.DS_Store
+*.swp
+*.tmp
+*.bak
+*.pid
+
+# =========== #
+# IDE Specific #
+# =========== #
+.vscode/
+.idea/
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# =========== #
+# Unity Asset Store #
+# =========== #
+*.unitypackage
+
+# =========== #
+# Auto-generated #
+# =========== #
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.xcuserdatad/
+
+# =========== #
+# Build Configs #
+# =========== #
+*.apk
+*.aab
+*.exe
+*.app
+*.ipa
+
+# ============ #
+# JetBrains Rider #
+# ============ #
+.idea/
+*.sln.iml
+
+# ============ #
+# Meta Quest Builds (optional) #
+# ============ #
+*.gradle
+.gradle/
+*.keystore
+
+# =========== #
+# User-specific #
+# =========== #
+UserSettings/
+
+Builds/
+
+
+Assets/
+
+Assets
+Assets/
